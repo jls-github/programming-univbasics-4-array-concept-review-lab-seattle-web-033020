@@ -12,8 +12,8 @@ end
 def find_max_value(array)
   max_number = array[0]
   array.each do |element|
-    if array[element] > max_number
-      max_number = array[element]
+    if element > max_number
+      max_number = element
     end
   end
   return max_number
@@ -23,8 +23,8 @@ def find_min_value(array)
   # Add your solution here
   min_number = array[0]
   array.each do |element|
-    if array[element] < min_number
-      min_number = array[element]
+    if element < min_number
+      min_number = element
     end
   end
   return min_number
